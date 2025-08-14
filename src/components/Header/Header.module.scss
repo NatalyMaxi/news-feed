@@ -1,0 +1,75 @@
+@use '../../styles/themes/light' as light;
+@use '../../styles/themes/dark' as dark;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 24px;
+  height: 64px;
+  background: transparent;
+
+  &.headerLight {
+    background: light.$primary-bg;
+  }
+
+  &.headerDark {
+    background: dark.$primary-bg;
+
+    .themeButton {
+      color: dark.$primary-text;
+
+      &:hover svg {
+        fill: dark.$accent-hover;
+        stroke: dark.$accent-hover;
+      }
+    }
+  }
+
+  .titleLight,
+  .titleDark {
+    color: var(--primary-text);
+    transition: color 0.3s ease;
+  }
+
+  .logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover.titleLight {
+      color: light.$accent-hover;
+    }
+    &:hover.titleDark {
+      color: dark.$accent-hover;
+    }
+  }
+
+  .themeButton {
+    font-size: 20px;
+    border: none;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    color: light.$primary-text;
+
+    &:hover {
+      background: transparent !important;
+    }
+
+    svg {
+      transition:
+        stroke 0.3s ease,
+        fill 0.3s ease;
+    }
+
+    &:hover svg {
+      fill: light.$accent-hover;
+      stroke: light.$accent-hover;
+    }
+  }
+}
