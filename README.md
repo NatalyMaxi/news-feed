@@ -98,4 +98,5 @@ yarn build
 | `yarn format` | Форматирование файлов через Prettier         |
 
 [Ссылка на репозиторий](https://github.com/NatalyMaxi/news-feed)
+
 [Demo](https://natalymaxi.github.io/news-feed/)
