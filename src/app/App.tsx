@@ -5,6 +5,7 @@ import { useTheme } from './providers/theme/useTheme';
 import { AppFooter, AppHeader } from '../components';
 
 import styles from './App.module.scss';
+import { Home } from '../pages';
 
 const App = () => {
   const { theme } = useTheme();
@@ -18,7 +19,9 @@ const App = () => {
       })}
     >
       <AppHeader />
-      <div className={styles.contentWrapper}>Hello</div>
+      <div className={styles.contentWrapper}>
+        <Home />
+      </div>
       <AppFooter />
     </Layout>
   );

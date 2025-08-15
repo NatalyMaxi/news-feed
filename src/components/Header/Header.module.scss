@@ -72,4 +72,10 @@
       stroke: light.$accent-hover;
     }
   }
+
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.3rem;
+    }
+  }
 }

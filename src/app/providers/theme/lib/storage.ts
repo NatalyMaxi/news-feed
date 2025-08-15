@@ -6,7 +6,7 @@ export const saveTheme = (theme: ThemeMode) => {
   try {
     localStorage.setItem(STORAGE_KEY, theme);
   } catch (error) {
-    console.error('Ошибка при сохранении темы в localStorage:', error);
+    console.error('Error saving theme to localStorage:', error);
   }
 };
 
@@ -16,7 +16,7 @@ export const loadTheme = (): ThemeMode | null => {
     if (theme === 'light' || theme === 'dark') return theme;
     return null;
   } catch (error) {
-    console.error('Ошибка при загрузке темы из localStorage:', error);
+    console.error('Error loading theme from localStorage:', error);
     return null;
   }
 };

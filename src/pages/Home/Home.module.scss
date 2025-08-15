@@ -1,0 +1,30 @@
+@use '../../styles/themes/light' as light;
+@use '../../styles/themes/dark' as dark;
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .virtualList {
+    overflow: auto;
+    padding: 0 24px;
+    flex-grow: 1;
+  }
+
+  .loader {
+    text-align: center;
+    padding: 16px;
+  }
+
+  .noPosts {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    color: light.$secondary-text;
+
+    :global(.dark) & {
+      color: dark.$secondary-text;
+    }
+  }
+}

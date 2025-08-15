@@ -18,7 +18,7 @@ export const AppFooter = () => {
         [styles.footerLight]: !isDark,
       })}
     >
-      © 2025 News Feed. Все права защищены.
+      © 2025 News Feed. All rights reserved.
     </Footer>
   );
 };
