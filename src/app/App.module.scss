@@ -1,0 +1,22 @@
+@use '../styles/themes/light' as light;
+@use '../styles/themes/dark' as dark;
+
+.appLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+
+  &.appLayoutLight {
+    background-color: light.$primary-bg;
+  }
+
+  &.appLayoutDark {
+    background-color: dark.$primary-bg;
+  }
+
+  .contentWrapper {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+}

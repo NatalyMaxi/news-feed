@@ -1,46 +1,100 @@
-# Getting Started with Create React App
+#### News Feed
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### 📜 Описание
 
-## Available Scripts
+Это React-приложение, которое загружает новости с удалённого API и отображает их в удобной ленте с пагинацией при скролле. Используется виртуализация списка для высокой производительности при большом количестве элементов.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+##### ⚡ Функциональность проекта
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Загрузка и отображение новостной ленты с удалённого API с пагинацией по 10 элементов.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Поддержка бесконечной прокрутки: новые новости подгружаются автоматически при достижении конца списка.
 
-### `npm test`
+- Высокая производительность благодаря виртуализации — рендерятся только видимые элементы, что снижает нагрузку на браузер.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Переключение между светлой и тёмной темами с сохранением выбора пользователя в локальном хранилище для персонализированного опыта.
 
-### `npm run build`
+- Полная адаптивность дизайна: интерфейс корректно отображается на любых устройствах — от мобильных до десктопов.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### ⚙️ Оптимизация производительности и масштабируемости
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📦 Redux Toolkit — управление состоянием, загрузка данных и обработка ошибок.
 
-### `npm run eject`
+🧩 rc-virtual-list — виртуализация списка новостей, что значительно снижает нагрузку на DOM..
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+🔄 Бесконечная подгрузка данных (infinite scroll) — плавная загрузка новых новостей при прокрутке.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🌙 Поддержка тем — адаптация интерфейса под светлую и тёмную темы.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+📱 Адаптивный дизайн — корректное отображение на всех устройствах и экранах.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+##### 📁 Технологии
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React 19
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Redux Toolkit
+
+- Ant Design 5
+
+- rc-virtual-list (виртуализация списка)
+
+- TypeScript
+
+- SCSS
+
+- Axios
+
+- ESLint и Prettier
+
+- Husky и lint-staged
+
+---
+
+##### 🔧 Инструменты разработки
+
+Для поддержания качества кода в проекте настроены:
+
+- ESLint и Prettier — для проверки кода на ошибки и единообразного форматирования.
+
+- Husky — для запуска хуков Git (pre-commit), что обеспечивает автоматическую проверку и форматирование кода перед коммитом.
+
+Это помогает поддерживать стабильность, читаемость и стандартизацию кода на всех этапах разработки.
+
+---
+
+##### 🚀 Как запустить проект
+
+```bash
+# Клонирование репозитория
+git clone https://github.com/NatalyMaxi/news-feed
+cd news-feed
+
+# Установка зависимостей
+
+npm install      # или
+yarn install
+
+# Запустить проект в режиме разработки
+npm start        # или
+yarn start
+
+# Собрать production-версию
+npm run build    # или
+yarn build
+
+```
+
+| Команда       | Описание                                     |
+| ------------- | -------------------------------------------- |
+| `yarn start`  | Запуск проекта в режиме разработки           |
+| `yarn build`  | Сборка production-версии                     |
+| `yarn lint`   | Проверка JavaScript/TypeScript-кода (ESLint) |
+| `yarn format` | Форматирование файлов через Prettier         |
+
+[Ссылка на репозиторий](https://github.com/NatalyMaxi/news-feed)

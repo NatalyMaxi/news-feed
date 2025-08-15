@@ -1,0 +1,19 @@
+@use '../../styles/themes/light' as light;
+@use '../../styles/themes/dark' as dark;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  background-color: transparent;
+  padding: 0;
+
+  &.footerLight {
+    background-color: light.$primary-bg;
+  }
+
+  &.footerDark {
+    background-color: dark.$primary-bg;
+  }
+}
