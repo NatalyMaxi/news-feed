@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/news-feed/static/css/main.fda1216d.css",
+    "main.js": "/news-feed/static/js/main.39fdc774.js",
+    "index.html": "/news-feed/index.html",
+    "main.fda1216d.css.map": "/news-feed/static/css/main.fda1216d.css.map",
+    "main.39fdc774.js.map": "/news-feed/static/js/main.39fdc774.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fda1216d.css",
+    "static/js/main.39fdc774.js"
+  ]
+}
